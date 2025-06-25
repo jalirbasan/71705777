@@ -1,0 +1,50 @@
+Comandos de Red
+hostname
+ipconfig /all
+ping localhost
+ping 127.0.0.1
+ping ip - t
+nslookup nombrepc (BEL-205-LW-025)
+netstat
+tracert dns
+ping ip (envio de paquetes)
+
+ping ip -t (envio de paquetes sostenido)
+
+ipconfig /all (datos adaptadores red)
+
+ipconfig /all | find "Descripción" (nombre adaptadores red)
+
+hostname (nombre host)
+
+getmac (direccion fisica mac) C8-5A-CF-0F-69-BA 
+
+arp /a (direcciones ARP Address Resolution Protocol ip asignadas)
+
+nslookup nombrepç (diagnostico infraestructura red y nombre dominio)
+
+netstat (conexiones activas ip y puertos al pc)
+
+tracert nombrepç (diagnostico rutas destino)
+
+pathping nombrepç (latencia red)
+
+// Scrip
+:loop
+echo Prueba de ejecución de un DOS local
+ping -t 10.13.181.243
+goto loop
+pause
+
+Comandos de router
+enable
+config terminal
+router rip
+version 2
+exit
+exit
+write mem
+
+
+//// Mirar configuración del router
+show running-config
